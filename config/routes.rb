@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  root 'welcome#news'
+
+  get 'news' => 'welcome#news'
+  get 'ruby' => 'welcome#ruby'
+  get 'java' => 'welcome#java'
+  get 'php' => 'welcome#php'
+  get 'contact' => 'welcome#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
 
   resources :articles
 
