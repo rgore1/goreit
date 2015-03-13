@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  root 'welcome#news'
+  resources :users
+
+  root 'welcome#index'
 
   get 'news' => 'welcome#news'
   get 'ruby' => 'welcome#ruby'
   get 'java' => 'welcome#java'
   get 'php' => 'welcome#php'
-  get 'contact' => 'welcome#contact'
+  get 'kontakt' => 'welcome#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
