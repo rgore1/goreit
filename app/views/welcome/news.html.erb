@@ -4,11 +4,11 @@
 
   <% @articles.each do |article| %>
       <tr>
-        <td> <b><span style=" vertical-align: text-bottom"> <%= article.title %></span></b></td>
+        <td> <b><span style=" vertical-align: text-bottom"> <%= article.title.html_safe %></span></b></td>
       </tr>
 
       <tr>
-        <td><%= article.text %></td>
+        <td><%= article.text.html_safe %></td>
       </tr>
 
       <tr>
