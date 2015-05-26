@@ -1,6 +1,6 @@
 == README
 
-Goreit.eu <-- company website
+Goreit.pl <-- company website
 
 ruby, rails
 
